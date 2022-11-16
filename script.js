@@ -1,6 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//Charset
+var low = "abcdefghijklmnopqrstuvwxyz"
+var upp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var num = "0123456789"
+var special = "!@#$%^&*_-+="
+
 // Write password to the #password input
 function writePassword() {
   var password = "password"
@@ -16,7 +22,7 @@ function writePassword() {
   //include uppercase do you shout?
   var includeupp = confirm("Do you shout? Include upper")
   // numbers? are you a numbers guy?
-  var includenum = confirm("Are you a numbers guy? include numbers")
+  var includenum = confirm("Are you a numbers guy? Include numbers")
   // are you feeling special?
   var special = confirm("Do you feel special? Include special")
   // must answer at least one of latter 4
@@ -24,9 +30,9 @@ function writePassword() {
     console.log(includelow, includenum, includenum, special)
     //generate password function
   }
-  // else{
-  //   (writePassword)
-  // }
+   else{
+    var password = "Select at minimum one set of characters"
+  }
 
 
   var passwordText = document.querySelector("#password");
